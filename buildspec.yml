@@ -13,7 +13,7 @@ phases:
       - echo installing
       - npm install
       - echo Building...
-      - npm react-scripts build
+      - npm run build
 artifacts:
   files:
     - "**/*"
