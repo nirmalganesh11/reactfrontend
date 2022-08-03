@@ -16,6 +16,7 @@ import Home from './components/pages/Home';
 import Courses from './components/pages/Courses';
 import Reviews from './components/pages/Reviews';
 import Admissions from './components/pages/Admissions';
+import Appy from './CompareModule/Components/App';
 
 
 function App() { 
@@ -26,7 +27,7 @@ function App() {
         <Route path='/' exact element={<Home/>}/>
         <Route path='/placementranking' element={<Services/>}/>
         <Route path='/recomended' element={<RecomendedUniversities/>}/>
-        <Route path='/contact-us' element={<Comparison/>}/>
+        <Route path='/contact-us' element={<Appy/>}/>
         <Route path='/nirfranking' element={<NirfRanking/>} />
         <Route path='/courseranking' element={<CoursesRanking/>} />
         <Route path='/login' element={<Login/>}/>

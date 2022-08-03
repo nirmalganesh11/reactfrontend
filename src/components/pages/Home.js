@@ -1,10 +1,9 @@
 import React from "react";
 import '../css/newfile.scss'
 import Data from './mockdata.json'
+import UniversityData from './UniversitiesData.json'
 import '../css/search.css'
 import { useState } from "react";
-import Search from "../SearchImplementation/SearchFunction";
-import details from '../../../src/components/SearchImplementation/data/initialDetails'
 
 const Home =() =>{
     // const link =() =>{
@@ -23,21 +22,19 @@ const Home =() =>{
         <input type="search" placeholder="Search Colleges" onChange={event => {setQuery(event.target.value); change()}} />
         </form>
         {
-            Data.filter(post => {
+            UniversityData.filter(post => {
               if (query === '') {
                 return post;
-              } else if (post.fullname.toLowerCase().includes(query.toLowerCase())) {
+              } else if (post.name.toLowerCase().includes(query.toLowerCase())) {
                 return post;
               }
             }).map((post, index) => (
                 <ul><div  key={index}><li>   
-                <p>{post.id +" " + post.username + " " + post.fullname +" " +  post.email}</p></li>
-             
+                <p>{post.name +" " + post.country}</p></li>
               </div></ul>
            
             ))
           }
-       
         </div>
         )
 }
