@@ -3,6 +3,7 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './css/Navbar.css';
 import Dropdown from './Dropdown';
+import NavBar from 'react-bootstrap/Navbar';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -87,15 +88,6 @@ function Navbar() {
             </Link>
             {dropdown && <Dropdown />}
           </li>
-         
-          
-         
-        
-
-
-
-
-         
           <li>
             <Link
               to='/sign-up'

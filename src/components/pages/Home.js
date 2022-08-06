@@ -4,6 +4,7 @@ import Data from './mockdata.json'
 import UniversityData from './UniversitiesData.json'
 import '../css/search.css'
 import { useState } from "react";
+import Navbar from "../Navbar";
 
 const Home =() =>{
     // const link =() =>{
@@ -17,6 +18,7 @@ const Home =() =>{
    
    
     return(<div>
+    
        {/* <Search details={details} />   */}   
         <form >
         <input type="search" placeholder="Search Colleges" onChange={event => {setQuery(event.target.value); change()}} />

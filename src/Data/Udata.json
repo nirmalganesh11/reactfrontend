@@ -29,6 +29,7 @@
         "TheWeek":20,
         "Outlook":20
     },
+    "coed":true,
     "Salary":2000000,
     "TotalFees":1000000,
     "AcceptedExams":"JEE",
